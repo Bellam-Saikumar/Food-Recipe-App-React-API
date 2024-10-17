@@ -11,3 +11,188 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.titleName{
+  text-align: center;
+  color:rgb(4, 132, 11);
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(96, 197, 30, 0.3); 
+}
+.titleName :hover{
+  color: rgb(24, 120, 31);
+}
+.titleName img{
+    width: 250px;  
+    height: auto; 
+    margin-bottom: -20px;
+    border-radius: 45%;  
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.searchBar{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 22px;
+}
+.searchBar input{
+  width: 400px;
+  padding: 9px;
+  font-size: 22px;
+  border: none;
+  background-color: #e7e7e7;
+  border-radius: 6px;
+}
+.searchBar button{
+  width: 90px;
+  background-color: rgb(4, 132, 11);
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.searchBar button:hover{
+  background-color: rgb(5, 111, 48);
+}
+
+.meals{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 44px;
+  padding-bottom: 20px;
+}
+
+.meals img{
+  width: 100%;
+  height: 270px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+.mealImg{
+  width: 280px;
+  height: 380px;
+  text-align: center;
+  background-color: #f6f4f4;
+  border-radius: 11px;
+}
+
+.mealImg p{
+  font-weight: 600;
+}
+.mealImg button{
+  width: 120px;
+  background-color:rgb(5, 111, 48);
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 21px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.mealImg button:hover{
+  background-color: rgb(18, 136, 65);
+}
+
+.mealTitle{
+  color:rgb(15, 192, 15);
+  flex-direction:column;
+  text-align: center;
+  font-size: 48px;
+}
+
+.mealInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  max-width: 90%;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+.mealInfo img {
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Recipe detail heading */
+.info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+/* Ingredients heading */
+.info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #d98805;
+}
+
+/* Ingredients list */
+.info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.info ul li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Instructions paragraph */
+.info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* YouTube link section */
+.info a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(8, 127, 8);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.info a:hover {
+  background-color:rgb(8, 152, 8);
+}
+
+/* Button style for the meal name */
+.info button {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.info button:hover {
+  background-color: #ffdd33;
+}
