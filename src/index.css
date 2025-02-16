@@ -1,10 +1,32 @@
 body {
   margin: 0;
+  background-image: url("/public/HomePage_Image.jpg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: repeat-y; 
+  background-attachment: fixed; 
+  min-height: 100vh; 
+  background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/HomePage_Image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  filter: blur(8px); /* Adjust blur intensity */
+  z-index: -1; /* Keeps it in the background */
 }
 
 code {
@@ -31,22 +53,25 @@ code {
     margin-right: 20px;
     margin-top: 40px;
 }
+
 .searchBar{
+  text-align: center;
   display: flex;
   justify-content: center;
   gap: 7px;
-  margin-top: 22px;
+  margin-top:22px;
 }
 .searchBar input{
-  width: 400px;
+  text-align: center;
+  width: 500px;
   padding: 9px;
-  font-size: 22px;
+   font-size: 21px;
   border: none;
-  background-color: #e7e7e7;
+  background-color: #ffffff;
   border-radius: 6px;
 }
 .searchBar button{
-  width: 90px;
+  width:90px;
   background-color: rgb(4, 132, 11);
   color: white;
   border: none;
@@ -75,34 +100,38 @@ code {
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
 }
+
 .mealImg{
   width: 280px;
   height: 380px;
   text-align: center;
   background-color: #f6f4f4;
   border-radius: 11px;
+  border: 1.5px solid #ffffff; 
+  border-radius: 10px;
 }
 
 .mealImg p{
   font-weight: 600;
 }
+
 .mealImg button{
   width: 120px;
   background-color:rgb(5, 111, 48);
   color: white;
   font-size: 17px;
-  border: none;
+  border: 2px solid black;
   border-radius: 21px;
   padding: 7px;
   cursor: pointer;
 }
 
-.mealImg button:hover{
-  background-color: rgb(18, 136, 65);
+.mealImg img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
 }
-
 .mealTitle{
-  color:rgb(15, 192, 15);
+  color:rgb(63, 152, 4);
   flex-direction:column;
   text-align: center;
   font-size: 48px;
@@ -112,16 +141,26 @@ code {
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
+  justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  padding: 20px;
   max-width: 90%;
-  margin: 20px auto;
+  margin: 20px 20px;
   border-radius: 12px;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(219, 212, 212, 0.1); 
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 50px 50px;
 }
 
 .mealInfo img {
-  max-width: 400px;
+  width: 280px;
+  height: 280px;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -137,7 +176,6 @@ code {
   margin-bottom: 10px;
   color: #333;
 }
-
 
 /* Ingredients heading */
 .info h3 {
